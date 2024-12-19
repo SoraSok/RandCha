@@ -1,0 +1,109 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px 15px; 
+    box-sizing: border-box;
+}
+
+header>h1{
+    margin: 0;
+}
+
+header>nav{
+    display: flex;
+    gap: 15px;
+}
+
+header>nav>a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main{
+    flex: 1;
+}
+
+main>h1{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+main>button{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+main > button:hover {
+    box-shadow: 0 0 15px 5px rgba(161, 161, 161, 0.732); 
+    transform: scale(1.05); 
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+footer>h3{
+    display: flex;
+}
+
+.chall {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    border: 3px solid black; 
+    margin: 20px 35%;
+    padding: 15px;
+}
+
+.chall>button{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.ch{
+    color: gray;
+    opacity: 70%;
+    font-size: 16px;
+    margin: -5px 0;
+}
+
+#challenges .chall{
+    display: none;
+}

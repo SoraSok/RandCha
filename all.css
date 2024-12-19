@@ -1,0 +1,141 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px 15px; 
+    box-sizing: border-box;
+}
+
+header>h1{
+    margin: 0;
+}
+
+header>nav{
+    display: flex;
+    gap: 15px;
+}
+
+header>nav>a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+main{
+    flex: 1;
+}
+
+main>h1{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+footer>h3{
+    display: flex;
+}
+
+
+.ch{
+    color: gray;
+    opacity: 70%;
+    font-size: 16px;
+    margin: -5px 0;
+}
+
+#challenges {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 60px; 
+    padding: 20px; 
+}
+
+.chall {
+    flex: 1 1 calc(80% - 40px); 
+    max-width: 400px; 
+    min-width: 250px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    border: 3px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    font-size: 18px;
+}
+
+.chall:hover {
+    transform: scale(1.05); 
+}
+
+.chall>button {
+    width: 350px;
+    font-size: 16px; 
+    padding: 8px 16px;
+    background-color: #000; 
+    color: #fff; 
+    align-items: center;
+    transition: background-color 0.3s ease; 
+}
+
+.chall>button:hover {
+    background-color: #161616; 
+    cursor: pointer;
+}
+
+#pl{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: calc(53% - 40px);;
+    margin-left: 70px;
+}
+
+input {
+    width: 300px; 
+    height: 40px; 
+    font-size: 18px; 
+    padding: 10px; 
+    border: 2px solid rgba(195, 195, 195, 0.729);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+#categories {
+    width: 300px; 
+    height: 40px;
+    font-size: 12px; 
+    padding: 10px; 
+    border: 2px solid rgba(195, 195, 195, 0.729);
+    border-radius: 8px;
+    color: gray;
+    box-sizing: border-box;
+}
